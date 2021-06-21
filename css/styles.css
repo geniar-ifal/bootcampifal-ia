@@ -606,7 +606,7 @@ input[type='checkbox'] {
 /*    Header     */
 /*****************/
 .header {
-	padding-top: 7rem;
+	padding-top: 8.5rem;
 	padding-bottom: 2.5rem;
 	/* background: url('../images/header-background.png') center center no-repeat; */
 	/* background-size: 100%; */
@@ -1354,7 +1354,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 10rem;
+		padding-top: 3.5rem;
 		padding-bottom: 7rem;
 		text-align: left;
 	}
@@ -1542,7 +1542,7 @@ a:hover.back-to-top {
 	/* Header */
 	.header {
 		overflow-x: hidden;
-		padding-top: 10.75rem;
+		padding-top: 5rem;
 		padding-bottom: 13rem;
 	}
 
