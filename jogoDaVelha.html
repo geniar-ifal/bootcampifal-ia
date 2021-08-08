@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description" />
+    <meta name="author" content="Your name" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Bootcamp IA</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/jogoDaVelha.css" rel="stylesheet" />
+    <script src="js/jogoDaVelha.js"></script>
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container">
+        <!-- Image Logo -->
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="logo-image"
+            src="images/BOOTCAMPLOGO2.png"
+            alt="alternative"
+        /></a>
+
+        <button
+          class="navbar-toggler p-0 border-0"
+          type="button"
+          data-toggle="offcanvas"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse offcanvas-collapse"
+          id="navbarsExampleDefault"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#header"
+                >Início<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#intro">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#features"
+                >Temas abordados</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#details">Detalhes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown01"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Games</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item page-scroll" href="article.html"
+                  >Jogo da velha</a
+                >
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end of navbar-collapse -->
+      </div>
+      <!-- end of container -->
+    </nav>
+    <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <!-- Header -->
+    <header class="ex-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+            <h1>Jogo da velha com IA</h1>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </header>
+    <!-- end of ex-header -->
+    <!-- end of header -->
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-4">
+      <div class="container">
+        <div class="messages">
+            
+        </div>
+        <div class="row">
+          
+          <div class="main">
+            <div class="row">
+              <div class="column line-right">
+                <div class="cell" onclick="jogaHumano('00')">
+                  <span class="pedra" id="00"></span>
+                </div>
+              </div>
+              <div class="column line-right">
+                <div class="cell" onclick="jogaHumano('01')">
+                  <span class="pedra" id="01"></span>
+                </div>
+              </div>
+              <div class="column">
+                <div class="cell" onclick="jogaHumano('02')">
+                  <span class="pedra" id="02"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row line-top">
+              <div class="column">
+                <div class="cell" onclick="jogaHumano('10')">
+                  <span class="pedra" id="10"></span>
+                </div>
+              </div>
+              <div class="column">
+                <div class="cell" onclick="jogaHumano('11')">
+                  <span class="pedra" id="11"></span>
+                </div>
+              </div>
+              <div class="column">
+                <div class="cell" onclick="jogaHumano('12')">
+                  <span class="pedra" id="12"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row line-top">
+              <div class="column">
+                <div class="cell" onclick="jogaHumano('20')">
+                  <span class="pedra" id="20"></span>
+                </div>
+              </div>
+              <div class="column">
+                <div class="cell" onclick="jogaHumano('21')">
+                  <span class="pedra" id="21"></span>
+                </div>
+              </div>
+              <div class="column">
+                <div class="cell" onclick="jogaHumano('22')">
+                  <span class="pedra" id="22"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-3 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+            <h2 class="mb-4">O Algoritmo minimax</h2>
+            
+            <p class="text-justify">
+              No jogo acima, fizemos utilização do algoritmo minimax. Este algoritmo nos garante uma jogabilidade otimizada,
+              o objetivo é decidir qual a melhor jogada que o jogador poderá fazer de forma a <strong>minimizar</strong> a melhor jogada possível do adversário.
+            </p>
+            <p class="text-justify">
+              Se o jogador A pode vencer com um movimento, esse é o seu melhor movimento. Se o jogador B identifica que um 
+              movimento levará a uma situação em que o adversário pode ganhar no próximo movimento, e que existe outro 
+              movimento que poderá levar a uma situação em que o adversário pode, no máximo, empatar, então, este último é o 
+              melhor movimento para ele. Após algumas rodadas, é fácil identificar qual é o melhor movimento.
+            </p>
+            <p class="text-justify">
+              Acreditamos que já tenha percebido que será impossível vocês vencer o jogo da velha acima!!!
+            </p>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="footer-col first">
+                      <h6>Sobre Nós</h6>
+                      <p class="p-small">Os cursos oferecidos fazem parte do projeto "IFAL Bootcamp: ideias inovadoras para jovens talentos" aprovado no EDITAL IFES NO. 03/2020 de Apoio à Inovação Tecnológica com Foco na Economia 4.0. O projeto é uma iniciativa do grupo de pesquisa GENIAR em parceria com o grupo de pesquisa NEOGETQ, ambos vinculados ao Instituto Federal de Alagoas (IFAL).</p>
+                  </div> <!-- end of footer-col -->
+                  <div class="footer-col third">
+                      <span class="fa-stack">
+                          <a href="https://www.instagram.com/geniar_robotech/?hl=pt-br" target="_blank">
+                              <i class="fas fa-circle fa-stack-2x"></i>
+                              <i class="fab fa-instagram fa-stack-1x"></i>
+                          </a>
+                      </span>
+                      <p class="p-small"><a href="mailto:geniar@ifal.edu.br"><strong>geniar@ifal.edu.br</strong></a></p>
+                  </div> <!-- end of footer-col -->
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+          <div class="row">
+              <div class="col-lg-12" style="display: flex; justify-content: space-between;">
+                  <div class="footer-col2">
+                      <h6>UM PROJETO: </h6>
+                      <img class="footer-image" src="images/log_ifal_2.png" alt="IFAL">
+                      <img class="footer-image" src="images/logo_geniar.jpeg" alt="GENIAR">
+                  </div> <!-- end of footer-col -->
+                  <div class="footer-col2">
+                      <h6>APOIO: </h6>
+                      <div>
+                          <img class="footer-image" src="images/logo_ifes.png" alt="IFES">
+                          <img class="footer-image" src="images/logo_facto.png" alt="FACTO">
+                      </div>
+                  </div> <!-- end of footer-col -->
+                  <div class="footer-col2">
+                      <h6>PATROCÍNIO: </h6>
+                      <img class="footer-image" src="images/logo_mec.png" alt="MEC">
+                  </div> <!-- end of footer-col -->
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+      </div> <!-- end of container -->
+  </div> <!-- end of footer -->  
+  <!-- end of footer -->
+
+
+  <!-- Copyright -->
+  <div class="copyright">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <p class="p-small">Copyright © GENIAR</p>
+              </div> <!-- end of col -->
+          </div> <!-- enf of row -->
+      </div> <!-- end of container -->
+  </div> <!-- end of copyright --> 
+  <!-- end of copyright -->
+
+    <div class="modal fade" id="modalJogoDaVelha" tabindex="-1" aria-labelledby="modalJogoDaVelhaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-body modalJogoDaVelha">
+          <div style="width: 50%;">
+            <p id="textoModalJogoDaVelha"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main .row:not(:first-child) {
+  border-top: 1vh solid black;
+}
+
+.row .column:not(:first-child) {
+  border-left: 1vh solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 15vw;
+  max-height: 15vh;
+  width: 15vw;
+  max-width: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: grey;
+}
+
+.pedra {
+  font-size: 5vw;
+}
+
+.modalJogoDaVelha {
+  background-image: url("../images/robo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 5rem 1rem !important;
+}
+
+.textoModalJogoDaVelha {
+  font-size: 2rem !important;
+}
